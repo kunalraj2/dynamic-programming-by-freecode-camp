@@ -1,0 +1,34 @@
+""""
+Avoid plagiarism
+- detect two most likely books that might have plagiarism:
+    Longest shared common section of text 
+
+"i have this book i like to read " <base sentence 
+.^
+ 
+"she has this book i like to watch "
+.......^
+
+Base cases:
+     -match "read" to "read"
+     -"" to non-empty 
+
+"""
+
+'''
+
+A hello world 
+B World 
+
+'''
+
+# LCS(A,B,0,0)
+
+# def find_longest_substring(stringa, stringb, idxa=0, idxb=0):
+#       if idxa == len(stringa) or idxb==len(stringb): return 0 
+#  possibility_1 = find_longest_substring(stringa, stringb, idxa, idxb)
+#  Possibility_2= find_longest_substring(stringa, stringb, idxa, idxb+1)
+# if stringa[idxa] == stringb[idxb]:
+#     possibility_3 = find_longest_substring(stringa, stringb, idxa+1, idxb+1) + 1
+#
+#    return max(poos_1, poos_2, poss_3 if applicaple )
